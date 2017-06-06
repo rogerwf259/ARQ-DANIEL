@@ -1,0 +1,548 @@
+/* MENU */
+body{
+  color: white;
+  /*font: 14px/22px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font: 14px/22px  'Roboto', 'sans-serif';
+    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  background: #111111;
+  justify-content: center;
+  color: #FFFFFF;
+  z-index: 99999;
+}
+.about, .portfolio, .resume, .contact{
+  padding: 1.5rem;
+  font-size: 2em;
+}
+.nav_link {
+    border-left: 1px solid #222;
+}
+.nav_button:visited, .nav_button:link, .nav_button:active, .nav_button:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all .3s ease 0s;
+}
+.nav_link:hover {
+  background: #222222;
+  transition: all .3s ease 0s;
+}
+.nav_link:active, .nav_link:focus, .nav_link:visited, .nav_link:link {
+  background: #DF4244;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+
+/* Section ABOUT */
+#about{
+  display: flex;
+  flex-direction: column;
+}
+#vl {
+  background: #2e542b;
+  display: flex;
+  position: relative;
+}
+#video{
+  height: 100%;
+  width: 100%;
+}
+#vl img{
+  position: absolute;
+  top: calc(50% - 106px);
+  left: calc(50% - 166px);
+  z-index: 999;
+}
+#info{
+  display: flex;
+  background: #323232;
+  padding: 2.5rem 2rem;
+}
+#info h7{
+  margin-right: 3rem;
+}
+#info p {
+  text-align: justify;
+}
+#links_about{
+  display:flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 0;
+  font-size: .9rem;
+  text-decoration: none;
+}
+.ab_link{
+  padding: 0 0 1rem 0;
+}
+#links_about a:active, #links_about a:visited,
+#links_about a:link, #links_about a:hover {
+  color: #ADADAD;
+  text-decoration: none;
+  transition: all .3s ease 0s;
+}
+#links_about a:hover {
+  color: #fff;
+  transition: all .3s ease 0s;
+}
+#links_about a:first-child {
+  margin-top: .5rem;
+}
+#links_about a:nth-child(1)::before{
+  content: "\e954";
+}
+#links_about a:nth-child(2)::before{
+  content: "\e926";
+}
+#links_about a:nth-child(3)::before{
+  content: "\e9ca";
+}
+#links_about a::before{
+  font-family: 'icomoon';
+  font-size: 1.2rem;
+  margin-right: .5em;
+  text-decoration: none;
+}
+
+/* Portfolio */
+
+#portfolio {
+  background: black;
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio_element{
+  flex: auto;
+  width: 33%;
+}
+.portfolio_element img{
+  width: 100%;
+  height: auto;
+}
+
+/* Resume */
+
+#resume {
+  display: flex;
+  background: #FFFFFF;
+  flex-direction: column;
+}
+#info_res {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 4rem 3rem;
+}
+#info_res h7 {
+  flex: 1 1 25%;
+}
+.res_title {
+  color: #010101;
+}
+#info_res .education, #info_res .experience {
+  flex: 1 1 75%;
+  padding-right: 3rem;
+}
+.education, .experience {
+  display: flex;
+  flex-flow: column;
+}
+.education {
+  margin-bottom: 2rem;
+}
+.experience {
+  margin-top: 2rem;
+}
+.ed_element, .exp_element {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 2.5em;
+}
+.ed_element h7, .ed_element .college,
+.exp_element h7, .exp_element .corp {
+  flex: 1 1 70%;
+  font-weight: bold;
+}
+.ed_element .year, .ed_element .loc,
+.exp_element .year, .exp_element .loc {
+  flex: 0 0 30%;
+  text-align: right;
+  color: #000000;
+  font-weight: bold;
+}
+.ed_element h7, .exp_element h7 {
+  order: 0;
+  color: #df4244;
+}
+.ed_element .college, .exp_element .corp {
+  order: 2;
+  color: #000000;
+}
+.ed_element .year, .exp_element .year {
+  order: 1;
+}
+.ed_element .loc, .exp_element .loc {
+  order: 3;
+}
+
+.exp_element .text {
+  flex: 1 1 100%;
+  order: 4;
+  margin: 1.5em 0;
+  color: #656565;
+  text-align: justify;
+}
+
+
+
+
+.why_me {
+  display: flex;
+}
+.why_me h7 {
+  flex: 1;
+  padding: 2rem;
+  color: #010101;
+}
+.qualities{
+  font-size: .8rem;
+  flex: 4;
+  margin: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+}
+.why_me .qualities .qualitie{
+  flex: auto;
+  width: 33%;
+  padding: 1rem;
+  color: #666;
+  background: #0E0E0E;
+  transition: all .5s ease 0s;
+}
+.why_me .qualities .qualitie h6{
+  color: #fff;
+  font-weight: bold;
+}
+.why_me .qualities .qualitie:hover {
+  color: #fff;
+  transition: all .5s ease 0s;
+}
+
+/* Separator */
+
+#separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  padding: 4em;
+  transition: all .5s ease 0s;
+}
+#separator:hover {
+  background: #0087CB;
+  padding: 6em;
+  transition: all .5s ease 0s;
+}
+
+/* Contact */
+#contact {
+  display: flex;
+  background: #161616;
+  padding: 6rem 2rem;
+}
+#contact h7 {
+  color: #df4244;
+}
+#form {
+  flex: 1 1 50%;
+}
+/*#form h7 {
+  flex: 1 1 5%;
+}*/
+#form .form_item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+#form .form_item span {
+  color: #df4244;
+}
+#form .form_item label {
+  flex: 1 1 30%;
+}
+#form .form_item input, #form .form_item textarea {
+  flex: 1 1 70%;
+  background: #333333;
+  color: #eee;
+  border: 0;
+  outline: none;
+  padding: .5rem;
+  transition: all .3s ease 0s;
+}
+#form .form_item input:focus, #form .form_item textarea:focus {
+  background: #df4244;
+  transition: all .3s ease 0s;
+}
+#form button {
+  padding: 1.2rem 1.75rem;
+  margin-left: 30%;
+  letter-spacing: .15rem;
+  background: #df4244;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+  font: bold 20px/30px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  transition: all .3s ease 0s;
+}
+#form button:hover {
+  color: #df4244;
+  background: #fff;
+  transition: all .3s ease 0s;
+}
+#contact .recommendations {
+  flex: 1 1 30%;
+  margin-left: 4rem;
+
+}
+.recommendations h7 {
+  display: block;
+  margin-bottom: 2rem;
+}
+.recommendations p {
+  display: block;
+  margin-bottom: 2rem;
+}
+.recommendations .t_span {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+  font-weight: lighter;
+  color: #666;
+}
+.recommendations .b_span {
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: lighter;
+  color: #666;
+}
+
+
+/* Footer */
+#footer {
+  display: flex;
+  background: #111111;
+  align-items: center;
+}
+#footer p {
+  margin-left: 2rem;
+  margin-bottom: 0;
+  color: #666;
+  flex: 5 1 auto;
+  padding: 1rem;
+  transition: all .3s ease 0s;
+}
+#footer p:hover {
+  color: #DF4244;
+  transition: all .3s ease 0s;
+}
+#footer .contact_link {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 1rem;
+    transition: all .3s ease 0s;
+}
+#footer .contact_link:last-child {
+  margin-right: 3rem;
+}
+#footer a, #footer a:visited,
+#footer a:link, #footer a:hover,
+#footer a:active  {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.contact_link:nth-of-type(1):hover {
+  background: #03C8FF;
+  transition: all .3s ease 0s;
+}
+.contact_link:nth-of-type(2):hover {
+  background: #25D366;
+  transition: all .3s ease 0s;
+}
+.contact_link:nth-of-type(3):hover {
+  background: #3B5998;
+  transition: all .3s ease 0s;
+}
+.contact_link:nth-of-type(4):hover {
+  background: #ED7342;
+  transition: all .3s ease 0s;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+  body{
+    background: red;
+  }
+  /* About */
+
+  #about #info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+  }
+  #info p {
+    text-align: left;
+  }
+  #info h7, #info #links_about {
+    align-self: flex-start;
+  }
+  #links_about {
+    margin-left: 0;
+  }
+   /* Portfolio */
+
+  .portfolio_element {
+    width: 50%;
+  }
+
+  /* Resume */
+
+  #resume #info_res {
+    flex-direction: column;
+    padding: 1rem 4rem;
+  }
+  #info_res .education {
+    flex-flow: row wrap;
+  }
+  #info_res .education, #info_res .experience {
+    padding: 0;
+  }
+  .ed_element h7, .ed_element .college,
+  .exp_element h7, .exp_element .corp,
+  .ed_element .year, .ed_element .loc,
+  .exp_element .year, .exp_element .loc {
+    flex: 1 1 100%;
+  }
+  .ed_element h7 {
+    order: 0;
+  }
+  .ed_element .college {
+    order: 1;
+  }
+  .ed_element .year {
+    order: 2;
+    text-align: left;
+    font-weight: normal;
+  }
+  .ed_element .loc {
+    order: 3;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  .exp_element h7 {
+    order: 0;
+  }
+  .exp_element .corp {
+    order: 1
+  }
+  .exp_element .year {
+    order: 3;
+    text-align: left;
+    font-weight: normal;
+  }
+  .exp_element .loc {
+    order: 4;
+    text-align: left;
+    font-weight: normal;
+  }
+  .exp_element .text {
+    order: 2;
+    text-align: left;
+  }
+
+  /* Portfolio - why_me */
+
+  .why_me {
+    flex-direction: column;
+    padding: 1rem 4rem;
+  }
+  .why_me h7 {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .why_me .qualities {
+    flex-direction: column;
+    flex: 1;
+    margin: 0;
+  }
+  .why_me .qualities .qualitie {
+    width: 100%;
+    background: #FFFFFF;
+    margin-bottom: .5rem;
+    padding: 0;
+  }
+  .why_me .qualities .qualitie h6 {
+    color: #010101;
+    font-weight: 500;
+    margin-bottom: .5rem;
+  }
+
+  /* Contact */
+
+  #contact {
+    flex-direction: column;
+    padding: 0 4rem;
+  }
+  #form {
+    margin-top: 4rem;
+  }
+  #contact #group {
+    margin-top: .5rem;
+    /*padding-right: 9rem;*/
+  }
+  #contact #group button {
+    margin-left: 0;
+  }
+  #contact .recommendations {
+    margin: 4rem 0 3rem 0;
+  }
+  #group .form_item {
+    flex-direction: column;
+  }
+  #form .form_item input, #form .form_item textarea, #form .form_item label {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  /* Footer */
+
+  #footer {
+    flex-flow: row wrap;
+  }
+  #footer p {
+    flex: 1 1 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+  #footer .contact_link {
+    flex: 1 1 50%;
+  }
+  #footer .contact_link:last-of-type {
+    margin-right: 0;
+  }
+}

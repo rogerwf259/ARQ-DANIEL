@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --host 0.0.0.0 --port 3000 --open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod": "webpack -p"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.24.1",
+    "express": "^4.15.3",
     "react": "^15.5.3",
     "react-dom": "^15.5.3",
     "react-redux": "^5.0.4",
